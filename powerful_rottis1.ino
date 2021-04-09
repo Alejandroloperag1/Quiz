@@ -10,7 +10,7 @@ int main(){
 // SETUP
   Serial.begin(9600);
   
-  int n;
+  int h;
   Serial.print("Ingrese un numero entero: ");
   while (Serial.available()==0);
   h=Serial.parseInt();
@@ -21,7 +21,7 @@ int main(){
     while (Serial.available()==0);
     n=Serial.parseInt();
   }
-  int h_co=h, suma=0, cifra,potencia, valor_U=0;
+  int h_co=h, suma=0, valor,potencia, valor_U=0;
   int contar_U=0, sum_fu;
   
   while(h_co>0)
@@ -32,17 +32,17 @@ int main(){
       valor_U=valor;
       contar_U=1;
     }
-    else if(cifra==cifra_E)
+    else if(valor==valor_U)
     {
       contar_U++;
     }
-    potencia=cifra;
-    for (int i=1;i<cifra;i++)
+    potencia=valor;
+    for (int t=1;i<valor;t++)
     {
       suma_po=0;
-      for(int j=0;j<potencia;j++)
+      for(int s=0;s<potencia;s++)
       {
-        sum_fu+=cifra;
+        sum_fu+=valor;
       }
       potencia=sum_fu;
     }
