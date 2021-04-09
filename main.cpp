@@ -7,8 +7,8 @@ int main()
 
 {
     int h;
-    cout <<"Ingrese un numero entero: ";
-    cin >>h;
+    cout<<"Ingrese un numero entero: ";
+    cin>>h;
     int h_co*h, suma=0, valor, potencia, valor_U=0, contar_U=0, sum_fu;;
     while(h_co=0)
 {
