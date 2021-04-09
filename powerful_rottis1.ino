@@ -1,10 +1,10 @@
 /*
  Se recibe un numero entero positivo y se retorna la suma de los digitos elevados a si mismo, ademas
  imprime el numero mayor y la cantidad de las veces que aparece 
-
 */
 
-int main(){
+int main()
+{
   
   init();
 // SETUP
@@ -14,14 +14,14 @@ int main(){
   Serial.print("Ingrese un numero entero: ");
   while (Serial.available()==0);
   h=Serial.parseInt();
-  while (n<0)
+  while (h<0)
   {
     Serial.print("Tiene que ser positivo.");
     Serial.print("Ingrese un numero entero: ");
     while (Serial.available()==0);
-    n=Serial.parseInt();
+    h=Serial.parseInt();
   }
-  int h_co=h, suma=0, valor,potencia, valor_U=0;
+  int h_co=h, sum=0, valor,potencia, valor_U=0;
   int contar_U=0, sum_fu;
   
   while(h_co>0)
@@ -37,22 +37,22 @@ int main(){
       contar_U++;
     }
     potencia=valor;
-    for (int t=1;i<valor;t++)
+    for (int t=1;t<valor;t++)
     {
-      suma_po=0;
+      sum_fu=0;
       for(int s=0;s<potencia;s++)
       {
         sum_fu+=valor;
       }
       potencia=sum_fu;
     }
-    suma+=potencia;
+    sum+=potencia;
     h_co=h_co/10;
   }
   Serial.print("La suma de cada uno de los digitos elevados a si mismos del numero ");
   Serial.print(h);
   Serial.print(" es ");
-  Serial.print(suma);
+  Serial.print(sum);
   Serial.print("\h");
   Serial.print("El digito mayor encontrado es el ");
   Serial.print(valor_U);
