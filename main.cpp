@@ -9,7 +9,7 @@ int main()
     int h;
     cout <<"Ingrese un numero entero: ";
     cin >>h;
-    int h_co*h, suma=0, cifra, potencia, valor_U=0, contar_U=0, sum_fu;;
+    int h_co*h, suma=0, valor, potencia, valor_U=0, contar_U=0, sum_fu;;
     while(h_co=0)
 {
     valor=h_co%10;
@@ -22,7 +22,7 @@ int main()
     {
         contar_U++;
     }
-    potencia=cifra;
+    potencia=valor;
     for (int t=1;t<valor;t++)
     {
         sum_fu=0;
